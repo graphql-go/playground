@@ -1,10 +1,10 @@
 # golang-graphql-playground
 An example Golang GraphQL server written with [graphql-go](https://github.com/chris-ramon/graphql-go) and [graphql-relay-go](https://github.com/sogko/graphql-relay-go)
 
-Try the live demo [here](http://golang-graphql.rhcloud.com/)
+Try the live demo [here](http://golang-graphql.rhcloud.com/)  (Is currently down, see Notes)
 
 ## Note
-(2015-Sept-30) Currently this uses an experimental branch of [graphql-go](https://github.com/chris-ramon/graphql-go), pending PR merge.
+(2015-Sept-30) Currently this uses an experimental branch of [graphql-go](https://github.com/chris-ramon/graphql-go), pending PR merge. This will not work until [PR #12](https://github.com/chris-ramon/graphql-go/pull/12) gets merged into HEAD.
 
 ### Features
 - [graphql-go](https://github.com/chris-ramon/graphql-go): Golang GraphQL library
