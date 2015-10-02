@@ -11,7 +11,7 @@ func main() {
 
 	// simplest relay-compliant graphql server HTTP handler
 	// using Starwars schema from `graphql-relay-go` examples
-	h := graphql_relay.NewHandler(&graphql_relay.HandlerConfig{
+	h := gqlrelay.NewHandler(&gqlrelay.HandlerConfig{
 		Schema: &starwars.Schema,
 		Pretty: true,
 	})
