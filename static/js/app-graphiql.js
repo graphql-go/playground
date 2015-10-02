@@ -62,6 +62,12 @@ $(function (global) {
 
   global.renderGraphiql = function (elem) {
     // Render <GraphiQL /> into the body.
+    var toolbar = React.createElement(GraphiQL.Toolbar, {}, [
+      "Source available at ",
+      React.createElement("a", {
+        href: "https://github.com/sogko/golang-graphql-playground",
+      }, "github")
+    ]);
     React.render(
         React.createElement(GraphiQL, {
           fetcher: graphQLFetcher,
@@ -85,7 +91,7 @@ $(function (global) {
             "# will appear in the pane to the right.\n\n" +
             "query RebelsShipsQuery {\n  rebels {\n    name\n    ships(first: 1) {\n      edges {\n" +
             "        node {\n          name \n        }\n      }\n    }\n  }\n}"
-        }),
+        }, toolbar),
         elem
     );
   }
