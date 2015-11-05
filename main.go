@@ -3,15 +3,15 @@ package main
 import (
 	"net/http"
 
-	"github.com/sogko/graphql-go-handler"
-	"github.com/sogko/graphql-relay-go/examples/starwars"
+	"github.com/graphql-go/handler"
+	"github.com/graphql-go/relay/examples/starwars"
 )
 
 func main() {
 
 	// simplest relay-compliant graphql server HTTP handler
 	// using Starwars schema from `graphql-relay-go` examples
-	h := gqlhandler.New(&gqlhandler.Config{
+	h := handler.New(&handler.Config{
 		Schema: &starwars.Schema,
 		Pretty: true,
 	})
